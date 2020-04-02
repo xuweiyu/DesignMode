@@ -7,12 +7,9 @@ package com.xwy.designmode.mode.singleton;
  */
 public class LazyTest {
     public static void main(String[] args) {
-
-//        Lazy lazy2 = Lazy.getInstance();
-        for (int i = 0; i <10000 ; i++) {
-            Lazy lazy1 = Lazy.getInstance();
-            System.out.println(lazy1.age);
-        }
+        Lazy lazy1 = Lazy.getInstance();
+        Lazy lazy2 = Lazy.getInstance();
+        System.out.println(lazy1.hashCode()==lazy2.hashCode());
     }
 }
 
@@ -49,7 +46,6 @@ public class LazyTest {
 
 class Lazy {
     private static volatile Lazy instance;
-    public int age = 10;
 
     private Lazy() {
 
