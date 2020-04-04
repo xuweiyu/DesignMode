@@ -1,4 +1,4 @@
-package com.xwy.designmode.mode.factory.SimpleFactory;
+package com.xwy.designmode.mode.factory.factorymethod;
 
 import com.xwy.designmode.mode.factory.Pizza;
 
@@ -7,14 +7,15 @@ import com.xwy.designmode.mode.factory.Pizza;
  * email: xuweiyu@igengmei.com
  * 简介：
  */
-public class SimpleFactory1 {
-    //根据类型创建不同的pizza
-    public static Pizza createPizza(String type) {
+public class SweetFactoryMethod extends FactoryMethod {
+    @Override
+    Pizza createPizza() {
         Pizza pizza = null;
+        String type = getType();
         if ("England".equals(type)) {
-            pizza = new EnglandPizza();
+            pizza = new SweetEnglandPizza();
         } else if ("Greek".equals(type)) {
-            pizza = new GreekPizza();
+            pizza = new SweetGreekPizza();
         }
         return pizza;
     }

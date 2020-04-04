@@ -1,7 +1,5 @@
 package com.xwy.designmode.mode.factory.SimpleFactory;
 
-import com.xwy.designmode.mode.factory.EnglandPizza;
-import com.xwy.designmode.mode.factory.GreekPizza;
 import com.xwy.designmode.mode.factory.Pizza;
 
 /**

@@ -15,7 +15,9 @@ public abstract class Pizza {
         System.out.println("烘焙");
     }
 
-    public abstract void cut();
+    public void cut(){
+        System.out.println("切割");
+    }
 
     public void box(){
         System.out.println("打包");
