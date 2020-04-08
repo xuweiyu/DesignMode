@@ -20,5 +20,8 @@ public class Client {
         phone4.open();
         Phone phone6 = new SlideCoverPhone(new Vivo());
         phone6.open();
+
+        Phone phone7 = new PidPhone(new Xiaomi());
+        phone7.open();
     }
 }
