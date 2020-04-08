@@ -14,7 +14,6 @@ public class VoltageAdapter implements Voltage5V {
 
     @Override
     public int getVoltage5V() {
-
         int sourceVoltage = voltage220V.output220V();
         int targetVoltage = stepDown(sourceVoltage);
         return targetVoltage;

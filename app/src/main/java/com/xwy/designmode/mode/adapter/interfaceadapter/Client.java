@@ -7,7 +7,7 @@ package com.xwy.designmode.mode.adapter.interfaceadapter;
  */
 public class Client {
     public static void main(String[] args) {
-        Adapter adapter = new Adapter(new Source());
+        Adapter adapter = new Adapter();
         adapter.method1();
         //匿名内部类的方式调用
         AbsAdapter absAdapter = new AbsAdapter() {
